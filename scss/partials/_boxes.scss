@@ -1,0 +1,96 @@
+.row3 {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 5.4rem;
+}
+
+.boxLeft, .boxCenter {
+    height: 225px;
+    width: 329px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1.61rem;
+    cursor: pointer;
+}
+
+.boxLeft {
+    background-image: url("../images/box1_img.jpg");
+}
+
+.boxCenter {
+    background-image: url("../images/box2_img.jpg");
+    // margin-left: 1.61rem;
+    // margin-right: 1.61rem;
+}
+
+.underline {
+    width: 138px;
+}
+
+.boxRight {
+    height: 250px;
+    width: 329px;
+    border: 1px solid lightgrey;
+    margin-top: 1.6rem;
+    padding-top: 2.3rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+h3 {
+    font-size: 1.23rem;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+.transparency {
+    margin-top: 10.7rem;
+    height: 5.77rem;
+    width: 100%;
+    background-color: rgba( 255, 255, 255, 0.4);
+    padding-top: 1.92rem;
+    padding-left: 1.38rem;
+}
+
+.boxLink {
+    text-decoration: none;
+}
+
+.boxRight > p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: grey;
+    padding-top: 1.54rem;
+}
+
+.underline, .underline2 {
+    height: 2px;
+    border: 3px solid $mainColor; //#4adbb7;
+    background-color: $mainColor; //#4adbb7;
+}
+
+.boxLeft:hover .transparency, .boxCenter:hover .transparency {
+    display: none;
+    // background-color: rgba( 255, 255, 255, 0.6);
+}
+
+@media (max-width: 767px) {
+
+}
+// Koniec media  <768px
+
+// @media (min-width: 768px) and (max-width: 1199px){
+//
+// }
+// Koniec media  768 - 1200px
+
+@media (min-width: 1200px) {
+    .row3 {
+        justify-content: space-between;
+    }
+}
+// Koniec media  >1200px

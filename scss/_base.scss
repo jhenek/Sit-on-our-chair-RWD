@@ -1,0 +1,25 @@
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    // font-size: 1em;
+}
+
+.styleText {
+    font-weight: 900;
+    font-size: 1.0em;
+}
+
+.styleText2 {
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.row {
+    min-width: 360px;
+}

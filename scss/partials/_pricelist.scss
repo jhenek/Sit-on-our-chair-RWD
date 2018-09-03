@@ -1,0 +1,203 @@
+.row4 {
+    padding-bottom: 5.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.row4 > .subHeader {
+    padding-top: 4rem;
+}
+
+h4 {
+    font-size: 1.54rem;
+    color: #707070;
+    padding-bottom: 5px;
+}
+
+.underline2 {
+    display: none;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boxPriceList {
+    height: 510px;
+    width: 329px;
+    border: 2px solid lightgrey;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center;
+    margin-top: 75px;
+    float: left;
+}
+
+.outerRing {
+    height: 56px;
+    width: 56px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    position: absolute;
+    top:-38px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+}
+
+.innerDot {
+    background-color: lightgrey;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 13px;//-8px;
+}
+
+h5 {
+    margin-top: 30px;
+    font-size: 1.77rem;    //23px;
+}
+
+.price {
+    margin: 30px auto;
+    width: 120px;
+    height: 120px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+}
+
+.price > p {
+    color: #A0A0A0;
+    font-weight: bold;
+}
+
+.price > p:first-child {
+    padding-top: 20px;
+    font-size: 3.07rem;    //40px;
+}
+
+.price > p:last-child {
+    padding-top: 10px;
+    font-size: 1.07rem;    //14px;
+}
+
+.superAlignment {
+    vertical-align: super;
+    font-size: 1.23rem;    //16px;
+}
+
+.boxPriceList > p {
+    color: #909090;
+    font-size: 1.85rem;    //24px;
+    line-height: 45px;
+}
+
+.boxPriceList > p:nth-child(2n) {
+    background-color: #e0e0e0;
+}
+
+.boxPriceList > p:nth-child(2n+1) {
+    background-color: #f0f0f0;
+}
+
+.pricelistButton {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #4adbb7;
+    border-radius: 5px;
+    background-color: #4adbb7;
+    position: absolute;
+    bottom:20px;
+    left: 110px;
+    box-shadow: 0 0 3px #888;
+}
+
+.pricelistButtonText {
+    font-size: 1.07rem;    //14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+/* Sekcja zmiany kolorow po najechaniu na wybrany pakiet */
+.boxPriceList:hover {
+    border: 2px solid #4adbb7;
+    background-color: #4adbb7;
+}
+
+.boxPriceList:hover .outerRing {
+    border: 2px solid #4adbb7;
+    background-color: #4adbb7;
+}
+
+.boxPriceList:hover .innerDot {
+    background-color:  #fff;
+}
+
+.boxPriceList:hover h5 {
+    color: #fff;
+}
+
+.boxPriceList:hover .price {
+/* border-color: #4adbb7; */
+    border: 2px solid  #4adbb7;
+    background-color:  #fff;
+}
+
+.boxPriceList:hover .price > p {
+    color:   #4adbb7;
+}
+
+.boxPriceList:hover .pricelistButton {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.boxPriceList:hover .pricelistButtonText {
+    color: #4adbb7;
+}
+
+
+.boxPriceList:hover .pricelistButton:hover {
+    border: 1px solid #E8E8E8;
+    background-color: #E8E8E8;
+}
+/* Koniec sekcji zmiany kolorow po najechaniu na wybrany pakiet */
+
+
+
+@media (max-width: 767px) {
+
+}
+// Koniec media  <768px
+
+// @media (min-width: 768px) and (max-width: 1199px){
+//
+// }
+// Koniec media  768 - 1200px
+
+@media (min-width: 1200px) {
+
+    .subHeader {
+        align-self: flex-start;
+    }
+
+    .underline2 {
+        display: block;
+        width: 325px;
+    }
+
+    .boxes {
+
+        justify-content: space-between;
+    }
+}
+// Koniec media  >1200px

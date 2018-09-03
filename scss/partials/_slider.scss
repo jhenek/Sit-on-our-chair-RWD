@@ -1,0 +1,179 @@
+.row2 {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 5.2rem;
+}
+
+.sliderPics {
+    background-image: url("../images/chair1.png");
+    background-repeat: no-repeat;
+}
+
+.sliderLeftArrow:hover .arrow , .sliderRightArrow:hover .arrow {
+    color: #3BCEA2;
+}
+
+@media (max-width: 767px) {
+    .sliderLeftArrow, .sliderRightArrow {
+        width: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: 4rem;
+            font-weight: 100;
+            text-decoration: none;
+        }
+    }
+
+
+    .sliderPics {
+        width: 92%;
+        height: 400px;
+        padding-left:0;
+        padding-right:0;
+        background-size: cover;
+        background-position: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+    .sliderArticle {
+        width: 100%;
+        order: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            span {
+                font-size: 1em;
+            }
+        }
+        .sliderText {
+            padding-top: 4%;
+            font-size: 1rem;
+            line-height: 1.6rem;
+            padding-bottom: 4%;
+        }
+
+        .sliderButton {
+
+            width: 200px;
+            height: 50px;
+            background-color: #4adbb7;
+            border: 1px solid #4adbb7;
+            border-radius: 8px;
+            box-shadow: 0 0 7px #888;
+        }
+        .sliderButton:hover {
+            background-color: #45CCAA;
+        }
+
+        .buttonText {
+            color: white;
+            font-size: 1.5rem; //1.3rem;
+            text-decoration: none;
+        }
+    }
+}
+// Koniec media  <768px
+
+// @media (min-width: 768px) and (max-width: 1199px){
+//
+// }
+// Koniec media  768 - 1200px
+
+@media (min-width: 768px) {
+    .row2 {
+        margin-top: 0;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 72%, rgba(169,169,169,1) 100%);
+        height: 500px;
+        padding-bottom: 0;
+    }
+
+    .sliderLeftArrow, .sliderRightArrow {
+        width: 4%;
+        a {
+            line-height: 500px;
+            font-weight: 100;
+            font-size: 5rem;
+            text-decoration: none;
+        }
+    }
+    .sliderLeftArrow {
+        text-align: left;
+
+    }
+    .sliderRightArrow {
+        text-align: right;
+
+    }
+    .sliderLeftArrow:hover, .sliderRightArrow:hover {
+        color: #3BCEA2;
+    }
+
+    .sliderPics {
+        width: 41%;
+        background-size: 135%; //148%; // 155%;
+        background-position: center bottom;
+    }
+
+    .sliderArticle {
+        width:51%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 8%;
+    }
+
+    h2, .sliderText {
+        text-align: center;
+    }
+
+    h2 {
+        padding-top: 31%;
+        font-size: 2.9rem;
+        font-weight: 700;
+        span {
+            font-size: 1em;
+        }
+    }
+
+    .sliderText {
+        padding-top: 7%;
+        font-size: 1.1rem;
+        line-height: 22px;
+    }
+
+    .sliderButton {
+        margin: 6% 22%;
+        width: 260px;
+        height: 50px;
+        background-color: #4adbb7;
+        border: 1px solid #4adbb7;
+        border-radius: 8px;
+        box-shadow: 0 0 7px #888;
+    }
+
+    .sliderButton:hover {
+        background-color: #45CCAA;
+    }
+
+    .buttonText {
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        letter-spacing: 0;
+    }
+}
+// Koniec media  >768px
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .sliderPics {
+        background-position-y: center;
+    }
+}

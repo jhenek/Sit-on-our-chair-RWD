@@ -1,0 +1,185 @@
+.row5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.row5 > .subHeader {
+    padding-top: 2.0rem;
+}
+
+.contactBoxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactBoxLeft {
+    padding-top: 3.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactBoxRight {
+    // padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labels {
+    width: 100%;
+    min-width: 250px; //329px;
+    height: 65px;
+    margin-bottom: 25px;
+    border: 1px solid #4adbb7;
+    color: lightgrey;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.message {
+    height: 195px;
+    padding-bottom: 130px;
+}
+
+::-webkit-input-placeholder {
+    color: lightgrey;
+}
+::-moz-placeholder {
+    color: lightgrey;
+}
+::-ms-input-placeholder {
+    color: lightgrey;
+}
+
+.checkbox {
+    display: flex;
+    align-self: flex-start;
+}
+
+.checkboxContainer {
+    width: 360px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 20px;
+    color: #A0A0A0;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #4adbb7;
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+    background-image: url(../images/form_ok.jpg);
+    background-size: 90% 80%;
+    background-position: 0 5px;
+    background-repeat: no-repeat;
+}
+
+.contactButton {
+    width: 240px;
+    height: 50px;
+    background-color: #4adbb7;
+    border: 1px solid #4adbb7;
+    border-radius: 8px;
+    box-shadow: 0 0 7px #888;
+}
+
+.contactButton:hover {
+    background-color: #45CCAA;
+}
+
+.contactButtonText {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .contactBoxes {
+        flex-direction: column;
+    }
+
+    .redchair {
+        display: none;
+    }
+
+}
+// Koniec media  <768px
+
+// @media (min-width: 768px) and (max-width: 1199px){
+//
+// }
+// Koniec media  768 - 1200px
+
+@media (min-width: 1200px) {
+
+    .contactBoxes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contactBoxLeft {
+        width:60%;
+    }
+
+    .contactBoxRight {
+        width: 40%;
+        margin-top: 18px;
+    }
+
+    .labels {
+        width: 100%;
+    }
+
+    .redChair {
+        width: 264px;
+        height: 210px;
+        background-image: url(../images/red_chair.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .checkbox {
+        align-self: center;
+        padding-top: 33px;
+        padding-left: 60px;
+    }
+
+    .contactButton {
+        margin-left: 50px;
+        width: 340px;
+        height: 70px;
+        background-color: #4adbb7;
+        border: 1px solid #4adbb7;
+        border-radius: 8px;
+        box-shadow: 0 0 7px #888;
+    }
+
+    .contactButtonText {
+
+        font-size: 30px;
+    }
+
+}
+// Koniec media  >1200px
